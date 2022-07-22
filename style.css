@@ -1,0 +1,68 @@
+body{
+    font-family: 'EB Garamond';
+    font-size: 4em;
+    background-image: url("assets/icons/fond_vertical.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 150px;
+}
+
+
+#title,#appstore, #playstore{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#logo,#appstore .icon, #playstore .icon{
+    text-align: center;
+}
+
+
+
+@media (min-width: 200px) {
+    body{
+        font-size: 2em;
+    }
+    #logo img,#appstore .icon img, #playstore .icon img{
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 3em;
+    }
+ }
+
+@media (min-width: 992px) { 
+
+ }
+
+@media (min-width: 1200px) { 
+    #logo img,#appstore .icon img, #playstore .icon img{
+        max-width: 25%;
+    }
+
+}
+
+@media (min-width: 1400px) { 
+ }
