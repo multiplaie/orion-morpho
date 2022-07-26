@@ -36,10 +36,16 @@ a{
 
 @media (min-width: 200px) {
     body{
-        font-size: 2em;
+        font-size: 1.5em;
+    }#content{
+        width: 100%;
+        margin-top: 20px;
     }
     #logo img,#appstore .icon img, #playstore .icon img{
-        max-width: 50%;
+        max-width: 33%;
+    }
+    #title,#appstore, #playstore{
+        margin-bottom: 50px;
     }
 }
 
@@ -49,7 +55,10 @@ a{
 
 @media (min-width: 768px) {
     body{
-        font-size: 3em;
+        font-size: 2em;
+    }
+    #logo img,#appstore .icon img, #playstore .icon img{
+        max-width: 25%;
     }
  }
 
@@ -58,10 +67,26 @@ a{
  }
 
 @media (min-width: 1200px) { 
-    #logo img,#appstore .icon img, #playstore .icon img{
-        max-width: 25%;
+
+    #content{
+        flex-wrap: wrap;
     }
 
+    #content .container{
+        display: contents;
+    }
+    #logo img{
+        max-width: 20%;
+    }
+    #appstore .icon img, #playstore .icon img{
+        max-width: 25%;
+    }
+    #logo, #title{
+        width: 100%;
+    }
+    #appstore, #playstore{
+        width:50%;
+    }
 }
 
 @media (min-width: 1400px) { 
