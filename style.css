@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    
 }
 
 a{
@@ -17,7 +18,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     margin-top: 150px;
 }
 
@@ -36,21 +36,31 @@ a{
 
 @media (min-width: 200px) {
     body{
-        font-size: 1.5em;
+        font-size: 1.2em;
+        margin : 0;
     }#content{
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0px;
+        min-height: 100vh;
     }
-    #logo img,#appstore .icon img, #playstore .icon img{
-        max-width: 33%;
+    #logo img{
+        max-width: 20%;
+    }
+    #appstore .icon img, #playstore .icon img{
+        max-width: 25%;
     }
     #title,#appstore, #playstore{
         margin-bottom: 2em;
     }
 }
 
-@media (min-width: 576px) {
-    
+@media (min-width: 540px) {
+    body{
+        font-size: 1.75em;
+    }
+    #logo img,#appstore .icon img, #playstore .icon img{
+        max-width: 20%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -70,7 +80,8 @@ a{
 
     #content{
         flex-wrap: wrap;
-        
+        margin-top: 150px;
+        min-height: auto;
     }
     
 
@@ -78,13 +89,13 @@ a{
         display: contents;
     }
     #logo img{
-        max-width: 15%;
+        max-width: 10%;
     }
     #appstore .icon img, #playstore .icon img{
-        max-width: 25%;
+        max-width: 20%;
     }
     #title{
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     #logo, #title{
         width: 100%;
