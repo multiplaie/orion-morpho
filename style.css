@@ -64,16 +64,21 @@ a{
 }
 
 @media (min-width: 768px) {
-    body{
+    /*body{
         font-size: 2em;
     }
     #logo img,#appstore .icon img, #playstore .icon img{
         max-width: 25%;
-    }
+    }*/
  }
 
 @media (min-width: 992px) { 
-
+    body{
+        font-size: 2em;
+    }
+    #logo img,#appstore .icon img, #playstore .icon img{
+        max-width: 10%;
+    }
  }
 
 @media (min-width: 1200px) { 
